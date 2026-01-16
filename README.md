@@ -5,7 +5,7 @@ A lightweight issue and project management system inspired by Jira, built for ac
 
 ## Documentation
 - [Vision Document](docs/vision.md)
-- [MoSCoW Prioritization](MOSCOW.md)
+- [MoSCoW Prioritization](moscow.md)
 
 ## Tech Stack
 - Frontend:
