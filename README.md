@@ -8,9 +8,10 @@ A lightweight issue and project management system inspired by Jira, built for ac
 - [MoSCoW Prioritization](moscow.md)
 
 ## Tech Stack
-- Frontend:
-- Backend:
-- Database:
+- Frontend: HTML / CSS / JavaScript (or React)
+- Backend: Node.js + Express (or Django / Flask)
+- Database: MongoDB or PostgreSQL
+- Authentication: JWT or session-based authentication
 
 ## How to Run
 (placeholder for now)
