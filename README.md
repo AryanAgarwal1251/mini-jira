@@ -26,9 +26,45 @@ This project follows **GitHub Flow**, a lightweight and industry-recommended bra
    ```bash
    git checkout -b feature/authentication
 
+2. Commit changes regularly with meaningful messages
+3. Push the branch to GitHub
+   ```bash
+   git push origin feature/authentication
+4. Open a Pull Request (PR) to merge into main
+5. Review → Merge → Delete feature branch
+   
+## Quick Start – Local Development (Docker)
 
-## How to Run
-(placeholder for now)
+### Prerequisites
+- Docker Desktop
+- Git
+
+### Steps
+1. Clone the repository
+   ```bash
+   git clone https://github.com/<your-username>/mini-jira.git
+   cd mini-jira
+2. Build and start all services
+   docker-compose up --build
+
+3. Access the application
+   Frontend: http://localhost:3000
+   Backend API: http://localhost:5000
+
+stop containers
+
+## Local Development Tools
+
+The following tools were used for local development:
+
+- **Node.js 18** – Backend and frontend runtime
+- **Express.js** – Backend framework
+- **React.js** – Frontend UI
+- **MongoDB** – Database
+- **Docker & Docker Compose** – Containerized local development
+- **Git & GitHub** – Version control and collaboration
+- **VS Code** – Code editor
+
 
 ## Contributors
 Aryan Agarwal
