@@ -13,6 +13,20 @@ A lightweight issue and project management system inspired by Jira, built for ac
 - Database: MongoDB or PostgreSQL
 - Authentication: JWT or session-based authentication
 
+## Branching Strategy (GitHub Flow)
+
+This project follows **GitHub Flow**, a lightweight and industry-recommended branching strategy.
+
+### Branches Used
+- `main` – Stable production-ready code
+- `feature/authentication` – User login and JWT authentication (example feature branch)
+
+### Workflow
+1. Create a feature branch from `main`
+   ```bash
+   git checkout -b feature/authentication
+
+
 ## How to Run
 (placeholder for now)
 
