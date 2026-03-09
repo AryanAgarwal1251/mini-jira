@@ -87,6 +87,30 @@ The user interacts with the system through a web browser. The frontend interface
 
 ---
 
+## Context Diagram
+
+The context diagram shows the Mini Jira system as a single process and illustrates its interaction with external entities such as users and project managers. It highlights how external actors interact with the system through actions such as authentication, project management, and task tracking.
+
+![Context Diagram](https://github.com/AryanAgarwal1251/mini-jira/blob/main/docs/design/context_diagram_mini-jira.png)
+
+---
+
+## Level-1 Data Flow Diagram (DFD)
+
+The Level-1 Data Flow Diagram decomposes the Mini Jira system into major functional processes. These processes include user management, project management, issue management, sprint management, and reporting. The diagram also illustrates how data flows between these processes and the system’s data stores.
+
+![Level 1 DFD](https://github.com/AryanAgarwal1251/mini-jira/blob/main/docs/design/level1_DFDpng.png)
+
+---
+
+## Entity Relationship Diagram (ERD)
+
+The ER diagram represents the database structure of the Mini Jira system. It defines the key entities used by the application and the relationships between them. The main entities include **User, Project, Task, Comment, and ProjectMember**, which together support project collaboration and issue tracking.
+
+![ER Diagram](https://github.com/AryanAgarwal1251/mini-jira/blob/main/docs/design/erd_mini-jira.png)
+
+---
+
 ### Design Principles Applied
 
 The system design follows several core software engineering principles.
