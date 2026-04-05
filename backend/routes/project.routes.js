@@ -1,18 +1,12 @@
-const router = require("express").Router();
-const Project = require("../models/Project");
-const auth = require("../middleware/auth.middleware");
+const express = require("express");
+const router = express.Router();
 
-router.post("/", auth, async (req, res) => {
-  const project = await Project.create({
-    ...req.body,
-    createdBy: req.user.id
-  });
-  res.json(project);
-});
+const {
+  createProject,
+  getProjects
+} = require("../controllers/projectController");
 
-router.get("/", auth, async (req, res) => {
-  const projects = await Project.find({ createdBy: req.user.id });
-  res.json(projects);
-});
+router.post("/", createProject);
+router.get("/", getProjects);
 
 module.exports = router;
