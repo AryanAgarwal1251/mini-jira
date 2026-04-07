@@ -13,8 +13,8 @@ app.use(express.json());
 // use minijira
 
 mongoose.connect("mongodb://admin:minijira123@localhost:27017/minijira?authSource=admin")
-.then(() => console.log("MongoDB connected"))
-.catch(err => console.log(err));
+  .then(() => console.log("MongoDB connected"))
+  .catch(err => console.log(err));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
@@ -69,7 +69,7 @@ app.get("/tasks", async (req, res) => {
     const filter = {
       createdBy: req.user.userId
     };
-    
+
     if (req.query.project) {
       filter.project = new mongoose.Types.ObjectId(req.query.project);
     }

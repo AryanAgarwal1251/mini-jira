@@ -3,6 +3,7 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.stryker-tmp
 
 # Environment variables
 .env
@@ -31,4 +32,11 @@ data/db/
 
 # Coverage
 coverage/
+
+# Personal notes and diagrams
+notes
+Mini-Jira_Arch.drawio
+Mini-Jira_Sequence.drawio
+Mini-Jira_Arch.png
+Mini-Jira_Sequence.png
 
