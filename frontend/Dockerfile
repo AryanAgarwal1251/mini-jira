@@ -1,12 +1,22 @@
-FROM node:18
+# Stage 1: Build
+FROM node:20-alpine AS build
 
 WORKDIR /app
 
-COPY package*.json ./
+# Copy only frontend project
+COPY mini-jira-frontend/package*.json ./
+
 RUN npm install
 
-COPY . .
+COPY mini-jira-frontend .
 
-EXPOSE 3000
+RUN npm run build
 
-CMD ["npm", "start"]
+# Stage 2: Serve using nginx
+FROM nginx:alpine
+
+COPY --from=build /app/dist /usr/share/nginx/html
+
+EXPOSE 5173
+
+CMD ["npm", "run", "dev", "--", "--host"]
